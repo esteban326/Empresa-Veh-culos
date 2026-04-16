@@ -1,0 +1,27 @@
+package Empresa;
+
+public class Camion extends Vehiculo{
+	
+	
+	private int capacidadCarga;
+	
+	public Camion(String placa, String marca, int velMaxima, int capacidadCarga) {
+		super(placa, marca, velMaxima);
+		this.capacidadCarga = capacidadCarga;
+	}
+	
+	public void Mover() {
+		System.out.println("El camion transporta " + capacidadCarga + " kilogramos.");
+	}
+	
+	public void calcularPeaje() {
+		int valor = capacidadCarga * 10;
+		System.out.println("El valor para el camion es: " + valor);
+	}
+	
+	public String toString() {
+		return "El camion tiene placas: " + placa + ", es de marca: " + marca + ", su velocidad max es: " +
+				 velMaxima + " y puede cargar " + capacidadCarga + " kilogramos";
+	}
+
+}
