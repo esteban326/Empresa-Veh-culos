@@ -1,0 +1,28 @@
+package Empresa;
+
+public class Vehiculo {
+	
+	protected String placa;
+	protected String marca;
+	protected int velMaxima;
+	
+	public Vehiculo(String placa, String marca, int velMaxima) {
+		this.placa = placa;
+		this.marca = marca;
+		this.velMaxima = velMaxima;
+		
+	}
+	
+	public void Mover() {
+	}
+	
+	public void calcularPeaje() {
+		
+	}
+	
+	public String toString() {
+		
+	}
+	
+
+}
