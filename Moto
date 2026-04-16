@@ -1,0 +1,28 @@
+package Empresa;
+
+public class Moto extends Vehiculo{
+	
+	private String tipo;
+	
+	public Moto(String placa, String marca, int velMaxima, String tipo) {
+		super(placa, marca, velMaxima);
+		this.tipo = tipo;
+	}
+	
+	public void Mover() {
+		System.out.println("La placa es: " + placa);
+	}
+	
+	public void calcularPeaje() {
+		int valor = 8000;
+		System.out.println("El valor para la moto es: " + valor);
+	}
+	
+	public String toString() {
+		return "La moto tiene placas: " + placa + ", es de marca: " + marca + ", su velocidad max es: " +
+				 velMaxima + " , es de tipo " + tipo ;
+	}
+	
+	
+
+}
