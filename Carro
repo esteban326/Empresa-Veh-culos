@@ -1,0 +1,29 @@
+package Empresa;
+
+public class Carro extends Vehiculo{
+	
+	private int numeroPuertas;
+	
+	public Carro(String placa, String marca, int velMaxima, int numeroPuertas) {
+		super(placa, marca, velMaxima);
+		this.numeroPuertas = numeroPuertas;
+		
+	}
+	
+
+	public void Mover() {
+		System.out.println("El carro de placas: " + placa + " se mueve.");
+	}
+	
+	public void calcularPeaje() {
+		int valor = numeroPuertas * 5000; 
+		System.out.println("El valor para el carro es: " + valor);
+	}
+	
+	public String toString() {
+		return "El carro tiene placas: " + placa + ", es de marca: " + marca + ", su velocidad max es: " +
+	 velMaxima + "tiene " + numeroPuertas + " puertas.";
+	}
+	
+
+}
